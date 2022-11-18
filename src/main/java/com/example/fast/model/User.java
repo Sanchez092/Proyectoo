@@ -111,7 +111,7 @@ public class User implements UserDetails  {
 
     public Role getRole() { return role; }
 
-    public void setRole(com.example.demo.model.Role role) {
+    public void setRole(com.example.fast.model.Role role) {
         this.role = role;
     }
 

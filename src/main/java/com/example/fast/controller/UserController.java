@@ -9,6 +9,6 @@ public class UserController {
 
     @RequestMapping(value = {"/dashboard"}, method = RequestMethod.GET)
     public String homePage(){
-        return "templates/admin/user/dashboard";
+        return "user/dashboard";
     }
 }
