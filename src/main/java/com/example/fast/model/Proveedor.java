@@ -17,7 +17,11 @@ public class Proveedor {
 
     @Column(length = 50, nullable = false)
     private int RUT;
+<<<<<<< HEAD
     @Column(length = 50, nullable = false)
+=======
+    @Column(length = 100, nullable = false)
+>>>>>>> 15872aeb17abd1ae91109805f94a0ef6a8902052
     private String primer_nombre;
     @Column(length = 50, nullable = false)
     private String segundo_nombre;
@@ -27,4 +31,9 @@ public class Proveedor {
     private String segundo_apellido;
     @Column(length = 10, nullable = false)
     private int telefono;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 15872aeb17abd1ae91109805f94a0ef6a8902052
 }

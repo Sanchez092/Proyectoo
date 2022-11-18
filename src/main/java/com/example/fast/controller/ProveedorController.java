@@ -31,11 +31,19 @@ public class ProveedorController {
             return "proveedor/new";
         }
 
+<<<<<<< HEAD
         @PostMapping("/proveedor/save")
         public String newProveedor(Proveedor proveedor){
             proveedorService.saveProveedor(proveedor);
             return "redirect:/proveedor/all";
         }
+=======
+    @PostMapping("/proveedor/save")
+    public String newProveedor(Proveedor proveedor){
+        proveedorService.saveProveedor(proveedor);
+        return "redirect:/proveedor/all";
+    }
+>>>>>>> 15872aeb17abd1ae91109805f94a0ef6a8902052
 
         @GetMapping("/proveedor/update/{id}")
         public String showUpdateProveedor(@PathVariable Long id, Model model){
