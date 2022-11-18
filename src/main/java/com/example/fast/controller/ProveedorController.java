@@ -31,7 +31,7 @@ public class ProveedorController {
     }
 
     @PostMapping("/proveedor/save")
-    public String saveProveedor(Proveedor proveedor){
+    public String newProveedor(Proveedor proveedor){
         proveedorService.saveProveedor(proveedor);
         return "redirect:/proveedor/all";
     }
