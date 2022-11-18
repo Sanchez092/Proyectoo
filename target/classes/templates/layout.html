@@ -34,6 +34,16 @@
                         <li><a class="dropdown-item" th:href="@{/proveedor/new}">Create</a></li>
                     </ul>
                 </li>
+                <li sec:authorize="isAuthenticated()" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Ventas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/venta/all}">All</a></li>
+                        <li><a class="dropdown-item" th:href="@{/venta/new}">Create</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                 </li>

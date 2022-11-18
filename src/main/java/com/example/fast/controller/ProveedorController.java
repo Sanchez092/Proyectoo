@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.List;
 
 @Controller
-public class ProveedorViewController {
+public class ProveedorController {
 
     @Autowired
     private ProveedorService proveedorService;
@@ -31,7 +31,7 @@ public class ProveedorViewController {
     }
 
     @PostMapping("/proveedor/save")
-    public String newProveedor(Proveedor proveedor){
+    public String saveProveedor(Proveedor proveedor){
         proveedorService.saveProveedor(proveedor);
         return "redirect:/proveedor/all";
     }

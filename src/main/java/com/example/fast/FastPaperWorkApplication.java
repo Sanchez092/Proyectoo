@@ -9,5 +9,4 @@ public class FastPaperWorkApplication {
     public static void main(String[] args) {
         SpringApplication.run(FastPaperWorkApplication.class, args);
     }
-
 }
