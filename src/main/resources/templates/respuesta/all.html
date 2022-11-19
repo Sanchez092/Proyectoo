@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <table class="table table-striped table-dark">
+    <thead>
+    <tr>
+      <td>Respuesta</td>
+      <td>Editar</td>
+      <td>Eliminar</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="respuesta: ${respuestas}">
+      <td th:text="${respuesta.respuesta}"></td>
+      <td>
+        <a class="btn btn-info" th:href="@{'/respuesta/update/' + ${respuesta.id}}">Editar</a>
+      </td>
+      <td>
+        <a class="btn btn-danger" th:href="@{'/respuesta/delete/' + ${respuesta.id}}">Eliminar</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
